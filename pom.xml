@@ -84,6 +84,26 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Spring JDBC (potrzebny do obsługi DataSource) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
     </dependencies>
+
+    <!-- Dodanie applicationContext.xml z WEB-INF do classpath (żeby Spring mógł go znaleźć) -->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/webapp/WEB-INF</directory>
+                <includes>
+                    <include>applicationContext.xml</include>
+                </includes>
+                <targetPath>WEB-INF</targetPath>
+            </resource>
+        </resources>
+    </build>
    
 </project>
