@@ -15,7 +15,7 @@ public class KsiazkaDaoImpl implements KsiazkaDao {
     private EntityManager entityManager;
 
     @Override
-    public Ksiazka findById(Long id) {
+    public Ksiazka findById(Integer id) {
         return entityManager.find(Ksiazka.class, id);
     }
 
@@ -30,7 +30,7 @@ public class KsiazkaDaoImpl implements KsiazkaDao {
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(Integer id) {
         Ksiazka ksiazka = entityManager.find(Ksiazka.class, id);
         if (ksiazka != null) {
             entityManager.remove(ksiazka);
