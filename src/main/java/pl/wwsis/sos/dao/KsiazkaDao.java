@@ -1,8 +1,8 @@
 package pl.wwsis.sos.dao;
 
-import pl.wwsis.sos.model.Ksiazka;
-
 import java.util.List;
+
+import pl.wwsis.sos.model.Ksiazka;
 
 public interface KsiazkaDao {
     Ksiazka findById(Integer id);
