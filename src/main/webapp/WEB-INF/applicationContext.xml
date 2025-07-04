@@ -59,4 +59,7 @@
     <bean id="grupaDao" class="pl.wwsis.sos.dao.impl.GrupaDaoImpl"/>
     <bean id="harmonogramZajecDao" class="pl.wwsis.sos.dao.impl.HarmonogramZajecDaoImpl"/>
     <bean id="wykladowcaDao" class="pl.wwsis.sos.dao.impl.WykladowcaDaoImpl"/>
+    <bean id="WykladowcaDao" class="pl.wwsis.sos.dao.impl.WykladowcaDaoImpl"/>
+    <bean id="WypozyczenieDao" class="pl.wwsis.sos.dao.impl.WypozyczenieDaoImpl"/>
+    <bean id="ZapisNaPrzedmiotDao" class="pl.wwsis.sos.dao.impl.ZapisNaPrzedmiotDaoImpl"/>
 </beans>
